@@ -1,0 +1,582 @@
+.postGrid {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease-in-out;
+    padding-left: 0;
+    padding-right: 0;
+}
+.postDate {
+    font-size: 12px !important; 
+}
+
+.postUserName {
+    font-size: 16px !important; 
+}
+
+.postAuthorLink{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+    justify-content: center;    
+    border-radius: 10px;
+    padding: 0%;
+}
+.postAuthorLink .postAuthorPic{
+    padding: 5px;
+}
+.postAuthorLink .postUserName{
+    padding: 5px;
+}
+.postAuthorLink:hover{
+    background-color: #222831 !important;
+}
+.card:hover {
+    -webkit-box-shadow: 0 0 15px #9B3922;
+    box-shadow: 0 0 15px #9B3922;
+    transform: scale(1.05);
+}
+
+.postUserName,
+.postDate {
+    color: gray;
+    padding: 10px;
+}
+.postAuthor{
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+}
+.postAuthor .postAuthorPic{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;   
+}
+.card .card-media {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 50%;
+}
+
+.card-details h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #9B3922;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.card-details .genre {
+    color: gray !important;
+}
+
+.card-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: lightgray;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    max-height: 60px;
+}
+
+.postAuthor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Single Card  */
+
+.singleCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.singleCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: all 0.1s ease-in-out;
+}
+
+.singleCard .singleCard-media {
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.singleCard-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.singleCard-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.singleCard-details .genre {
+    color: gray !important;
+}
+
+.singleCard-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: lightgray;
+}
+
+.postActions {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.postActions button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: lightgray;
+    background-color: #222831;
+    font-weight: 600;
+}
+
+.postActions button:hover {
+    background-color: #9B3922 !important;
+    color: #222831 !important;
+}
+
+.feedbackBtn {
+    background-color: gray;
+    color: #222831
+}
+
+.feedbackBtn:hover {
+    background-color: #9B3922 !important;
+    color: #222831 !important;
+}
+
+.backBtn {
+    background-color: transparent !important;
+    border: none;
+}
+
+.backBtn:hover {
+    color: #9B3922 !important;
+}
+
+.feedbackNotice {
+    color: lightgray !important;
+    border: gray 1px solid;
+    border-radius: 14px;
+    padding: 20px;
+
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.feedbackContainer {
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: lightgray !important;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 90%;
+}
+
+.singleCardContainer .singleCard h1 {
+    color: #9B3922 !important;
+    text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.feedbackContainer textarea {
+    background-color: #222831 !important;
+    border-color: lightgray !important;
+    color: gray !important;
+}
+
+.feedbackContainer textarea ::placeholder {
+    color: lightgray !important;
+}
+
+.rating {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.feedbackContainer textarea::placeholder {
+    color: gray !important;
+
+}
+
+.submittedFeedbacks {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.submittedFeedbacks h3 {
+    color: #9B3922 !important;
+    text-shadow: black 0.1em 0.1em 0.2em !important;
+}
+
+.submittedFeedbacks p {
+    color: lightgray !important;
+}
+
+.singleFeedback {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.singleFeedback P {
+    color: gray !important;
+}
+
+.singleFeedback h2 {
+    color: lightgray !important;
+    font-weight: 100;
+}
+
+.ratingSection {
+    background-color: #9B3922;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    width:97%;
+    color: lightgray;
+}
+
+
+.ratingSection {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+.ratingSection h3 {
+    font-size: 3rem;    
+    text-shadow: #222831 0.1em 0.1em 0.2em;
+    margin-top: 10px;
+}
+
+.ratingSection .ant-rate {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+
+.ratingSection .ratingBtn {
+    font-size: 1.5rem;
+    color: gray;
+}
+.feedbackAuthor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: fit-content;
+    padding: 5px;
+    margin: 0%;    
+    border-radius: 10px;  
+}
+.feedbackAuthor:hover{
+    cursor: pointer;
+    background-color: #222831;
+}
+.feedbackAuthor .feedbackAuthorPic {        
+    padding: 0%;
+    margin: 0%;
+}
+.feedbackAuthor .feedbackAuthorName {
+    padding: 10px;
+    margin: 0%;
+}
+.feedbackAuthorPic{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+.rateBtn{
+    padding-bottom: 20px;  
+}
+.alreadyRated{
+    margin-bottom: 20px;   
+    text-shadow: #222831 0.1em 0.1em 0.2em;
+    color: lightgray;
+}
+.rateBtn:hover{
+    background-color: #9B3927;
+   
+}
+/* create post */
+.createPost {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.createPostContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    color: lightgray;
+    width: 90%;
+    gap: 20px;
+}
+
+.createPostContainer h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.createPostContainer input,
+.createPostContainer textarea {
+    background-color: #222831;
+    border: 1px solid lightgray;
+    color: lightgray;
+    width: 50%;
+    padding: 20px;
+
+}
+
+.createPostContainer input::placeholder,
+.createPostContainer textarea::placeholder {
+    color: lightgray;
+}
+
+.createPostContainer .ant-input,
+.createPostContainer .ant-input-text-area {
+    background-color: #222831;
+    border: 1px solid lightgray;
+    color: lightgray;
+    padding: 10px;
+}
+
+.createPostBtn {
+    background-color: gray;
+    color: lightgray;
+}
+
+.createPostBtn:hover {
+    background-color: #9B3922 !important;
+    color: #222831 !important;
+}
+
+.createPost .backBtn {
+    background-color: transparent !important;
+    border: none;
+}
+
+.createPost.backBtn:hover {
+    color: #9B3922 !important;
+}
+
+.createPost .buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.editTitle{
+    margin: 0px;
+    padding: 0px;
+}
+.editBtn {
+    background-color: gray;
+    color: lightgray;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.editBtn:hover {
+    background-color: #9B3922 !important;
+    color: #222831 !important;
+}
+
+.deleteBtn {
+    background-color: gray;
+    color: lightgray;
+}
+
+.deleteBtn:hover {
+    background-color: #9B3922 !important;
+    color: #222831 !important;
+}
+
+/* edit post */
+
+.editPageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgray;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.editPostForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 20px;
+}
+
+.editPostForm h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.editPostForm .ant-input,
+.editPostForm .ant-input-text-area {
+    background-color: #222831;
+    border: 1px solid lightgray;
+    color: lightgray;
+    padding: 10px;
+}
+
+.editPostForm .ant-input::placeholder,
+.editPostForm .ant-input-text-area::placeholder {
+    color: lightgray;
+}
+
+.editPostForm .ant-btn {
+    background-color: gray;
+    color: lightgray;
+    border-radius: 10px;
+}
+
+.editPostForm .ant-btn:hover {
+    background-color: #9B3922 !important;
+    color: #222831 !important;
+}
+
+.backBtn {
+    background-color: transparent !important;
+    border: none;
+    color: gray !important;
+}
+
+.backBtn:hover {
+    color: #9B3922 !important;
+}
+.image-upload-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgray;
+    border-radius: 10px;
+    margin: 20px;    
+}
+.submitBtn{
+    width: fit-content;
+}
+.imageInput{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgray;
+    border-radius: 10px;    
+    width: 100%;
+}
+.loading {
+    color: lightgray;
+    font-size: 16px;
+    text-align: center; 
+}
+
+.postTitle {
+    color: lightgray;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-shadow: #222831 0.1em 0.1em 0.2em;
+}
+.postTitleContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #9B3922;
+}

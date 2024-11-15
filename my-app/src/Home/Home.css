@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Sixtyfour+Convergence&display=swap');
+ 
+* {
+    font-family: protest strike;
+}
+
+.myHeader {
+    background-color: #222831;
+    padding: 20px;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.myHeader .user-avatar{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+.links {
+    display: flex;  
+    gap: 100px;
+}
+
+.links a {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 25px;
+}
+
+.links a:hover {
+    color: #9B3922;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #9B3922;    
+}
+
+
+.myBody {
+    padding: 20px;
+
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.myFooter {
+    background-color: #9B3922;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: small;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.phone,
+a {
+    font-size: small;
+    text-decoration: none;
+
+
+}
+
+.backToTopBtn {
+    position: fixed;
+    bottom: 200px;
+    right: 20px;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+    background-color: transparent;
+}
+
+.search {
+    width: 50%;
+}
+
+.addPost button {
+    background-color: #222831;
+    color: #9B3922;
+    box-shadow: 4px 4px 4px #9B3922, -4px -4px 4px #9B3922;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.addPost button:hover {
+    background-color: #9B3922 !important;
+    color: #222831 !important;
+    box-shadow: 2px 2px 2px #222831, -2px -2px 2px #222831 !important;
+}
+
+.myTools {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+
+.myTools .search button {
+    background-color: #222831;
+}
+
+.sort {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sortBtn {
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #222831;
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.sortBtn.active {
+    color: lightgray;
+
+    background-color: #9B3922 !important;
+}
+
+.sortBtn:hover {
+    background-color: #9B3922 !important;
+}
+.user-avatar{
+    object-fit: cover;
+}
+.ant-modal-body form{
+    padding: 20px;
+}

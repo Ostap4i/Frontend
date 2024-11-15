@@ -1,0 +1,129 @@
+.user-page {
+    width: 90%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgray;
+    transition: all 0.3s ease-in-out;
+    margin: 0 auto;
+    border-radius: 14px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #9B3922;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    margin-bottom: 20px;
+}
+
+.image-upload-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: lightgray;
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.descriptionTxtArea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222831;
+    color: lightgray;
+}
+
+.image-upload-input {
+    width: 75%;
+}
+
+.user-info {
+    margin-top: 2em;
+}
+
+.user-info>div:nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12em;
+    margin-bottom: 20px;
+}
+
+.user-info>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 90%;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ddd;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #222831;
+    color: lightgray;
+}
+
+input:focus {
+    border-color: #9B3922;
+    outline: none;
+}
+
+.submit-button,
+.logout-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #9B3922;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover,
+.logout-button:hover {
+    background-color: #222831;
+    color: #9B3922;
+}
+
+.logout-button {
+    /* margin-top: 120px; */
+}
+
+.ava {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin: 20px auto;
+    border: 2px solid #9B3922;
+}
